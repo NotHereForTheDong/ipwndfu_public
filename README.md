@@ -6,11 +6,15 @@
 
 ## About this fork
 
-* This fork allows you to load img4 images (e.g. iBSS/LLB) in pwned DFU mode.
+* This fork allows you to load img4 images (e.g. iBSS/LLB) in pwned DFU or Recovery mode with signature checks disabled.
 
-* Also supports loading of unsigned img4 images. Run "python rmsigchks.py" to remove signature checks.
+* Also supports loading of unsigned img4 images on the 5s. Run "python A10-Nonce.py" to remove signature checks and set nonce.
 
-* Supports s5l8960x (iPhone 5s) and - new - t8011 (iPad Pro 2017).
+* Default generator is 0x1111111111111111. This can be changed in A10-Nonce.py by setting the nonc values accordingly.
+
+* Also supports loading of unsigned img4 images on the 5s. Run "python 5s_rmsigchks.py" to remove signature checks.
+
+* Supports s5l8960x (iPhone 5s) and  t8010 (iPhone 7).
 
 * **IMPORTANT:** Other devices are currently **NOT SUPPORTED**.
 
