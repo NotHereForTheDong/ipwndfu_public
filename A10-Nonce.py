@@ -15,7 +15,7 @@ if not args.generator:
 
 nonce = hex(int(args.generator[0], 16))[2:]
 print(nonce)
-noncearray = bytearray.fromhex(nonce)
+noncearray = bytearray.fromhex(nonce)[::-1]
 
 # rm SigChecks
 device = usbexec.PwnedUSBDevice()
